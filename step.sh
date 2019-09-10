@@ -1,4 +1,6 @@
-#!/bin/bash -ex
+#!/bin/bash
+
+set -euxo pipefail
 
 commenter \
 --owner "${commenter_owner}" \
