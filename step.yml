@@ -28,43 +28,43 @@ toolkit:
 inputs:
 - commenter_owner: "${BITRISEIO_GIT_REPOSITORY_OWNER}"
   opts:
-    title: --owner
+    title: The repository owner.
     description: |
-      The owner.
+      The value of the `--owner` Commenter option.
     is_expand: true
     is_required: true
 - commenter_repo: "${BITRISEIO_GIT_REPOSITORY_SLUG}"
   opts:
-    title: --repo
+    title: The repository slug.
     description: |
-      The repository.
+      The value of the `--repo` Commenter option.
     is_expand: true
     is_required: true
 - commenter_token: "${GITHUB_API_TOKEN}"
   opts:
-    title: --token
+    title: The GitHub API token.
     description: |
-      The token.
+      The value of the `--token` Commenter option.
     is_expand: true
     is_required: true
 - commenter_issue: "${BITRISE_PULL_REQUEST}"
   opts:
-    title: --issue
+    title: The issue or pull request.
     description: |
-      The issue or pull request.
+      The value of the `--issue` Commenter option.
     is_expand: true
     is_required: true
 - commenter_id: "${BITRISE_TRIGGERED_WORKFLOW_ID}"
   opts:
-    title: --id
+    title: The identifier to uniquely identify the comment.
     description: |
-      The identifier.
+      The value of the `--id` Commenter option.
     is_expand: true
     is_required: true
 - commenter_comment:
   opts:
-    title: --comment
+    title: The comment in GitHub markdown format.
     description: |
-      The comment.
+      The value of the `--comment` Commenter option.
     is_expand: true
     is_required: true
